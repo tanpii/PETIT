@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">PETIT</string>
+
+    <string name="button_registraion">Регистрация</string>
+    <string name="button_login">Вход</string>
+    <string name="button_change">Изменить</string>
+    <string name="button_deleteprofile">Удалить аккаунт?</string>
+    <string name="button_alreadyacc">Уже есть аккаунт?</string>
+    <string name="button_donthaveacc">Ещё нет аккаунта?</string>
+    <string name="button_newpet">Добавить</string>
+    <string name="button_editpet">Изменить</string>
+    <string name="button_newtodo">+Добавить</string>
+
+    <string name="title_petit">PETIT</string>
+    <string name="title_diary">ДНЕВНИК ПИТОМЦЕВ</string>
+    <string name="title_mypets">МОИ ПИТОМЦЫ</string>
+    <string name="title_mydiary">ДНЕВНИК ПИТОМЦЕВ</string>
+    <string name="title_myprofile">МОЙ ПРОФИЛЬ</string>
+    <string name="title_changeprofile">ДАННЫЕ\nПРОФИЛЯ</string>
+    <string name="title_newpet">ЗДРАВСТВУЙ,\nНОВЫЙ ДРУГ!</string>
+    <string name="title_editpet">ДАННЫЕ О\nПИТОМЦЕ</string>
+    <string name="title_newnote">ДОБАВИТЬ\nВОСПОМИНАНИЕ!</string>
+    <string name="title_editnote">ИЗМЕНИТЬ\nВОСПОМИНАНИЕ</string>
+    <string name="title_todo">ЗАДАЧИ:</string>
+    <string name="title_petdiary">Моменты с</string>
+    <string name="title_newtodo">НОВАЯ\nЗАДАЧА!</string>
+
+    <string name="name">ИМЯ:</string>
+    <string name="email">ПОЧТА:</string>
+    <string name="choose_icon">Выберите иконку:</string>
+
+    <string name="hint_name">ИМЯ</string>
+    <string name="hint_email">ПОЧТА</string>
+    <string name="hint_pass">ПАРОЛЬ</string>
+    <string name="hint_birthday">ДЕНЬ РОЖДЕНИЯ</string>
+    <string name="hint_text">ВВЕДИТЕ ТЕКСТ</string>
+    <string name="hint_date">ДАТА</string>
+    <string name="hint_time">ВРЕМЯ</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/myPetsFragment">
+
+    <fragment
+        android:id="@+id/myPetsFragment"
+        android:name="edu.mirea.tanpii.petit.ui.view.MyPetsFragment"
+        android:label="fragment_mypets"
+        tools:layout="@layout/fragment_mypets" />
+    <navigation android:id="@+id/navigation2"
+        app:startDestination="@id/entryFragment">
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="edu.mirea.tanpii.petit.ui.view.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login" />
+        <fragment
+            android:id="@+id/registrationFragment"
+            android:name="edu.mirea.tanpii.petit.ui.view.RegistrationFragment"
+            android:label="RegistrationFragment"
+            tools:layout="@layout/fragment_registration" />
+        <fragment
+            android:id="@+id/entryFragment"
+            android:name="edu.mirea.tanpii.petit.ui.view.EntryFragment"
+            android:label="EntryFragment"
+            tools:layout="@layout/fragment_entry">
+            <action
+                android:id="@+id/action_entryFragment_to_loginFragment"
+                app:destination="@id/loginFragment" />
+            <action
+                android:id="@+id/action_entryFragment_to_registrationFragment"
+                app:destination="@id/registrationFragment" />
+        </fragment>
+    </navigation>
+    <action
+        android:id="@+id/action_global_myPetsFragment2"
+        app:destination="@id/myPetsFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/navigation"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="edu.mirea.tanpii.petit.ui.view.MyProfileFragment"
+        android:label="MyProfileFragment" />
+    <fragment
+        android:id="@+id/myDiaryFragment"
+        android:name="edu.mirea.tanpii.petit.ui.view.MyDiaryFragment"
+        android:label="fragment_mydiary"
+        tools:layout="@layout/fragment_mydiary" />
+    <action android:id="@+id/action_global_myProfileFragment"
+        app:destination="@id/myProfileFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/navigation"
+        app:popUpToInclusive="true"/>
+    <action android:id="@+id/action_global_myDiaryFragment"
+        app:destination="@id/myDiaryFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/navigation"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/changeProfileFragment"
+        android:name="edu.mirea.tanpii.petit.ui.view.ChangeProfileFragment"
+        android:label="ChangeProfileFragment" />
+    <fragment
+        android:id="@+id/newPostFragment"
+        android:name="edu.mirea.tanpii.petit.ui.view.NewPostFragment"
+        android:label="fragment_newnote"
+        tools:layout="@layout/fragment_newpost" />
+    <fragment
+        android:id="@+id/newPetFragment"
+        android:name="edu.mirea.tanpii.petit.ui.view.NewPetFragment"
+        android:label="fragment_newpet"
+        tools:layout="@layout/fragment_newpet" />
+    <fragment
+        android:id="@+id/newTodoFragment"
+        android:name="edu.mirea.tanpii.petit.ui.view.NewTodoFragment"
+        android:label="fragment_newtodo"
+        tools:layout="@layout/fragment_newtodo" />
+    <fragment
+        android:id="@+id/editPetFragment"
+        android:name="edu.mirea.tanpii.petit.ui.view.EditPetFragment"
+        android:label="fragment_editpet"
+        tools:layout="@layout/fragment_editpet" />
+    <action
+        android:id="@+id/action_global_newPetFragment"
+        app:destination="@id/newPetFragment"
+        app:enterAnim="@android:anim/slide_in_left" />
+    <action
+        android:id="@+id/action_global_newTodoFragment"
+        app:destination="@id/newTodoFragment"
+        app:enterAnim="@android:anim/slide_in_left" />
+    <action
+        android:id="@+id/action_global_editPetFragment"
+        app:destination="@id/editPetFragment"
+        app:enterAnim="@android:anim/slide_in_left" />
+    <action
+        android:id="@+id/action_global_newPostFragment"
+        app:destination="@id/newPostFragment"
+        app:enterAnim="@android:anim/slide_in_left" />
+    <fragment
+        android:id="@+id/editPostFragment"
+        android:name="edu.mirea.tanpii.petit.ui.view.EditPostFragment"
+        android:label="fragment_editpost"
+        tools:layout="@layout/fragment_editpost" />
+    <action
+        android:id="@+id/action_global_editPostFragment"
+        app:destination="@id/editPostFragment"
+        app:enterAnim="@android:anim/slide_in_left" />
+</navigation>
