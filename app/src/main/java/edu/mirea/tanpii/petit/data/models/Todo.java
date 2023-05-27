@@ -12,7 +12,6 @@ public class Todo {
 
     private String uuid;
     private String petUUID;
-    private String petImageURL;
     private long date;
     private String text;
     private int icon;
@@ -23,9 +22,6 @@ public class Todo {
     public String getPetUUID() {
         return petUUID;
     }
-    public String getPetImageURL() {
-        return petImageURL;
-    }
     public long getDate() {
         return date;
     }
@@ -34,9 +30,8 @@ public class Todo {
     }
     public int getIcon() {return icon;}
 
-    public Todo(String uuid, String petUUID, String petImageURL, long date, String text, int icon) {
+    public Todo(String uuid, String petUUID, long date, String text, int icon) {
         this.uuid = uuid;
-        this.petImageURL = petImageURL;
         this.petUUID = petUUID;
         this.date = date;
         this.text = text;

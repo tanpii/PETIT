@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "885659405551",
+    "firebase_url": "https://petit-a631b-default-rtdb.firebaseio.com",
+    "project_id": "petit-a631b",
+    "storage_bucket": "petit-a631b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885659405551:android:5714ea16ffbfbdbf269f1a",
+        "android_client_info": {
+          "package_name": "edu.mirea.tanpii.petit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885659405551-cgveilikvb5o97d4h0li42gjedpr5vbj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYIjLg7mZHt5go-gzrfiVrcmPmXWUNvbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885659405551-cgveilikvb5o97d4h0li42gjedpr5vbj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

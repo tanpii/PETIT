@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".ui.view.MyPetsFragment">
+    tools:context=".ui.view.fragments.MyPetsFragment">
 
     <TextView
         android:id="@+id/title_mypets"
@@ -30,6 +30,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_mypets"/>
 
+    <ImageView
+        android:id="@+id/image_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView_pets"
+        app:layout_constraintBottom_toTopOf="@id/menu"/>
+
+    <TextView
+        android:id="@+id/title_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratblack"
+        android:textColor="@color/brown"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_hint"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView_infoPet"
         android:layout_width="wrap_content"
@@ -50,12 +72,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnDiary"
+            android:id="@+id/btnHealth"
             android:layout_width="35dp"
             android:layout_height="35dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnDiary"
+            android:background="@drawable/health_icon"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDiary"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnHealth"
             app:layout_constraintEnd_toStartOf="@id/btnPets"
             android:background="@drawable/diary_icon"/>
         <androidx.appcompat.widget.AppCompatButton
@@ -64,8 +95,8 @@
             android:layout_height="35dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnDiary"
+            app:layout_constraintEnd_toStartOf="@id/btnProfile"
             android:background="@drawable/pets_icon"/>
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnProfile"

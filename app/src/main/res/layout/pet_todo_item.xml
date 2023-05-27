@@ -25,19 +25,20 @@
         app:layout_constraintBottom_toBottomOf="@id/window"
         app:layout_constraintStart_toStartOf="@id/window"
         app:layout_constraintTop_toTopOf="@id/window"/>
-<!--    <TextView-->
-<!--        android:id="@+id/petFirstLetter"-->
-<!--        android:layout_width="35dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="13dp"-->
-<!--        android:gravity="center"-->
-<!--        android:fontFamily="@font/montserratblack"-->
-<!--        android:textColor="@color/brown"-->
-<!--        android:textSize="30sp"-->
-<!--        app:layout_constraintBottom_toBottomOf="@id/window"-->
-<!--        app:layout_constraintStart_toStartOf="@id/window"-->
-<!--        app:layout_constraintTop_toTopOf="@id/window"-->
-<!--        android:maxLines="1"/>-->
+    <TextView
+        android:id="@+id/firstLetter"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/montserratblack"
+        android:textColor="@color/brown"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/window"
+        app:layout_constraintStart_toStartOf="@id/window"
+        app:layout_constraintTop_toTopOf="@id/window"
+        android:maxLines="1"/>
 
     <ImageView
         android:id="@+id/iconTodo"

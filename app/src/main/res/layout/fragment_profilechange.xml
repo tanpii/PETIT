@@ -6,17 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".ui.view.MyDiaryFragment">
-
-    <ImageButton
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="87dp"
-        android:background="@drawable/back_icon"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toStartOf="@+id/title_newpet"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".ui.view.fragments.MyDiaryFragment">
     
     <TextView
         android:id="@+id/title_newpet"
@@ -35,9 +25,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/window"
         android:layout_width="324dp"
-        android:layout_height="537dp"
+        android:layout_height="500dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="15dp"
         android:background="@drawable/grey_rectangle"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +38,7 @@
             android:id="@+id/profileImage"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/circle"
             android:clickable="true"
             app:layout_constraintEnd_toEndOf="parent"
@@ -69,35 +59,7 @@
             app:layout_constraintEnd_toEndOf="@+id/window"
             app:layout_constraintStart_toStartOf="@+id/window"
             app:layout_constraintTop_toBottomOf="@+id/profileImage" />
-        <EditText
-            android:id="@+id/editEmail"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:hint="@string/hint_email"
-            android:fontFamily="@font/montserratregular"
-            android:textSize="16sp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:backgroundTint="@color/white"
-            android:layout_marginTop="27dp"
-            app:layout_constraintEnd_toEndOf="@+id/window"
-            app:layout_constraintStart_toStartOf="@+id/window"
-            app:layout_constraintTop_toBottomOf="@+id/editName" />
-        <EditText
-            android:id="@+id/editPass"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_pass"
-            android:fontFamily="@font/montserratregular"
-            android:textSize="16sp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:backgroundTint="@color/white"
-            android:layout_marginTop="27dp"
-            app:layout_constraintEnd_toEndOf="@+id/window"
-            app:layout_constraintStart_toStartOf="@+id/window"
-            app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnChangeAcc"
             android:layout_width="230dp"
@@ -110,22 +72,22 @@
             android:layout_marginTop="24dp"
             app:layout_constraintEnd_toEndOf="@+id/window"
             app:layout_constraintStart_toStartOf="@+id/window"
-            app:layout_constraintTop_toBottomOf="@+id/editPass" />
+            app:layout_constraintTop_toBottomOf="@+id/editName" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/btnDeleteAcc"
-        android:clickable="true"
+        android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_deleteprofile"
-        android:textSize="16sp"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
         android:fontFamily="@font/montserratregular"
+        android:text="@string/button_logout"
         android:textColor="@color/brown"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="28dp"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

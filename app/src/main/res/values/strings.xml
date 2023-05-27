@@ -7,6 +7,7 @@
     <string name="button_deleteprofile">Удалить аккаунт?</string>
     <string name="button_alreadyacc">Уже есть аккаунт?</string>
     <string name="button_donthaveacc">Ещё нет аккаунта?</string>
+    <string name="button_logout">Выйти из аккаунта?</string>
     <string name="button_newpet">Добавить</string>
     <string name="button_editpet">Изменить</string>
     <string name="button_newtodo">+Добавить</string>
@@ -14,6 +15,7 @@
     <string name="title_petit">PETIT</string>
     <string name="title_diary">ДНЕВНИК ПИТОМЦЕВ</string>
     <string name="title_mypets">МОИ ПИТОМЦЫ</string>
+    <string name="title_health">ЗДОРОВЬЕ</string>
     <string name="title_mydiary">ДНЕВНИК ПИТОМЦЕВ</string>
     <string name="title_myprofile">МОЙ ПРОФИЛЬ</string>
     <string name="title_changeprofile">ДАННЫЕ\nПРОФИЛЯ</string>
@@ -24,10 +26,13 @@
     <string name="title_todo">ЗАДАЧИ:</string>
     <string name="title_petdiary">Моменты с</string>
     <string name="title_newtodo">НОВАЯ\nЗАДАЧА!</string>
+    <string name="title_newtreatment">НОВАЯ ЗАМЕТКА\nО ЛЕЧЕНИИ!</string>
 
-    <string name="name">ИМЯ:</string>
-    <string name="email">ПОЧТА:</string>
+    <string name="name">ИМЯ: </string>
+    <string name="email">ПОЧТА: </string>
     <string name="choose_icon">Выберите иконку:</string>
+    <string name="documents">ДОКУМЕНТЫ:</string>
+    <string name="treatment">ЛЕЧЕНИЕ:</string>
 
     <string name="hint_name">ИМЯ</string>
     <string name="hint_email">ПОЧТА</string>
@@ -36,4 +41,10 @@
     <string name="hint_text">ВВЕДИТЕ ТЕКСТ</string>
     <string name="hint_date">ДАТА</string>
     <string name="hint_time">ВРЕМЯ</string>
+    <string name="hint_add_post">ДОБАВЬ ВОСПОМИНАНИЯ!</string>
+    <string name="hint_add_todo">ДОБАВЬ ЗАДАЧИ!</string>
+    <string name="hint_add_document">ДОБАВЬ ВАЖНЫЕ ДОКУМЕНТЫ!</string>
+    <string name="hint_add_treatment">ДОБАВЬ ЗАМЕТКУ О ЛЕЧЕНИИ!</string>
+    <string name="hint_title">ЗАМЕТКА</string>
+    <string name="hint_note">БОЛЬШЕ ИНФОРМАЦИИ</string>
 </resources>

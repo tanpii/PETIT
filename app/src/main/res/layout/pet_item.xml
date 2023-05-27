@@ -10,12 +10,26 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/circle"
-            android:src="@drawable/new_pet"
             android:layout_marginStart="5dp"
             app:layout_constraintBottom_toTopOf="@id/petName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/firstLetter"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/montserratblack"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/brown"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="@+id/petPicture"
+            app:layout_constraintEnd_toEndOf="@+id/petPicture"
+            app:layout_constraintStart_toStartOf="@+id/petPicture"
+            app:layout_constraintTop_toTopOf="@+id/petPicture" />
 
         <TextView
             android:id="@+id/petName"

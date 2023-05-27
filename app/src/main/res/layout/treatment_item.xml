@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/white_rectangle"
+    android:minHeight="120dp">
+
+    <View
+        android:id="@+id/noteWindow"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rectangle_note"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconTreatment"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="centerInside"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/noteWindow"
+        app:layout_constraintStart_toStartOf="@id/noteWindow"
+        app:layout_constraintTop_toTopOf="@id/noteWindow"/>
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/delete_icon"
+        android:scaleType="centerInside"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/noteWindow"
+        app:layout_constraintEnd_toEndOf="@id/noteWindow"
+        app:layout_constraintTop_toTopOf="@id/noteWindow" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="7dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserratregular"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textTitle"
+        app:layout_constraintStart_toStartOf="@id/noteWindow"
+        app:layout_constraintTop_toTopOf="@id/noteWindow" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserratregular"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/noteWindow"
+        app:layout_constraintTop_toBottomOf="@id/textDate" />
+
+    <TextView
+        android:id="@+id/textNote"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/montserratregular"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/noteWindow" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

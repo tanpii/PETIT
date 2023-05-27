@@ -17,9 +17,6 @@ public interface PetDAO {
     @Query("SELECT * FROM PetEntity")
     LiveData<List<PetEntity>> getAllPets();
 
-//    @Query("SELECT * FROM PetEntity WHERE uuid = :petUUID")
-//    <PetEntity> getByUUID(String petUUID);
-
     @Insert
     void addPet(PetEntity pet);
 

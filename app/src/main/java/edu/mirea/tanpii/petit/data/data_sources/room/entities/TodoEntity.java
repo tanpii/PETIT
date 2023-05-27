@@ -22,16 +22,7 @@ public class TodoEntity {
     public String petUUID;
 
     @ColumnInfo
-    public String petImageURL;
-
-    @ColumnInfo
     public long time;
-
-//    @ColumnInfo
-//    public String date;
-//
-//    @ColumnInfo
-//    public String time;
 
     @ColumnInfo
     public String text;
@@ -42,9 +33,8 @@ public class TodoEntity {
     public TodoEntity() {
     }
 
-    public TodoEntity(String uuid, String petUUID, String petImageURL, long time, String text, int icon) {
+    public TodoEntity(String uuid, String petUUID, long time, String text, int icon) {
         this.uuid = uuid;
-        this.petImageURL = petImageURL;
         this.petUUID = petUUID;
         this.time = time;
         this.text = text;
@@ -52,6 +42,6 @@ public class TodoEntity {
     }
 
     public Todo toDomainModel() {
-        return new Todo(uuid, petUUID, petImageURL, time, text, icon);
+        return new Todo(uuid, petUUID, time, text, icon);
     }
 }

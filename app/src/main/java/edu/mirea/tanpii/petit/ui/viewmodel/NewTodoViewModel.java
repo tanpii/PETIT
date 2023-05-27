@@ -1,12 +1,19 @@
 package edu.mirea.tanpii.petit.ui.viewmodel;
 
-import android.app.Application;
+import static android.content.Context.NOTIFICATION_SERVICE;
 
+import android.app.Application;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.content.Context;
+
+import androidx.core.app.NotificationCompat;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
 import java.util.List;
 
+import edu.mirea.tanpii.petit.R;
 import edu.mirea.tanpii.petit.data.models.Pet;
 import edu.mirea.tanpii.petit.data.models.Todo;
 import edu.mirea.tanpii.petit.data.repositories.PetsRepository;
@@ -26,7 +33,7 @@ public class NewTodoViewModel extends AndroidViewModel {
         return mItems;
     }
 
-    public void addTodo(String uuid, String petUUID, String petImageURL, long date, String text, int icon) {
-        repo.addTodo(new Todo(uuid, petUUID, petImageURL, date, text, icon));
+    public void addTodo(String uuid, String petUUID, long date, String text, int icon) {
+        repo.addTodo(new Todo(uuid, petUUID, date, text, icon));
     }
 }

@@ -22,8 +22,23 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/firstLetter"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/montserratblack"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:textColor="@color/brown"
+            android:textSize="100sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/petPicture"
+            app:layout_constraintStart_toStartOf="@+id/petPicture"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:id="@+id/petName"
-            android:layout_width="wrap_content"
+            android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserratblack"
             android:textColor="@color/white"
